@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+<body>
+
+    <h1>Super Secret Chat</h1>
+    <p>Do a chat with your friendos</p>
+
+    <form action="" method="POST">
+
+        <!-- Username Field -->
+        <input type="text" name="message" placeholder="Type here">
+
+
+        <!-- Login Button -->
+        <input type="submit" value="Send">
+
+    </form>
+
+    <p>
+    {% for para in chat %}
+    {{para}}<br />
+    {% endfor %}
+    </p>
+
+    {% if error %}
+    <p>{{error}}</p>
+    {% endif %}
+<br />
+
+</body>
+</html>

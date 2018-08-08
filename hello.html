@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Website! All about cats!</title>
+</head>
+<body>
+
+    <h1>Welcome to my website, full of useful content (about cats).</h1>
+
+    <p>   <a href="/chat">Chat with your friends here!</a> </p>
+
+    <img src="static/Cat03.jpg" width="400">
+<p> Cats are just really cool. </p>
+    <a href="/">Go back to main page</a>
+
+{% for para in chat %}
+    <p>{{para}}</p>
+{% endfor %}
+
+
+    <p>This cat appears to be riding a bike, but in reality he is not.</p>
+
+<form>
+<input type="button" value="Google" onclick="window.location.href='http://www.google.com'" />
+<input type="button" value="Yahoo" onclick="window.location.href='http://www.yahoo.com'" />
+</form>
+
+</body>
+</html>

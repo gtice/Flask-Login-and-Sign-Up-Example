@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secret Website Login</title>
+</head>
+<body>
+
+    <h1>Super Secret Website! Please log in!</h1>
+
+    <form action="" method="POST">
+
+        <!-- Username Field -->
+        <input type="text" name="username" placeholder="Username">
+
+        <!-- Password Field -->
+        <input type="password" name="password" placeholder="Password">
+
+        <!-- Login Button -->
+        <input type="submit" value="Login">
+
+    </form>
+
+    {% if error %}
+    <p>{{error}}</p>
+    {% endif %}
+<br />
+<a href="/signup">No account? Sign Up Here!</a>
+
+</body>
+</html>
